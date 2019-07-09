@@ -15,11 +15,15 @@ class ListItem extends React.Component {
   }
 
   render() {
-      return <li className="mdc-list-item" ref={this.ripple}><span className="mdc-list-otem__text">{this.props.name}</span></li>;
+      return <li onClick={this.handleClick} className="mdc-list-item" ref={this.ripple} value={this.props.name}><span className="mdc-list-otem__text">{this.props.name}</span></li>;
     }
 
   componentDidMount() {
       this.rippleItem = new MDCRipple(this.ripple.current)
+  }
+
+  handleClick(e) {
+      alert(e.target.value)
   }
 }
 

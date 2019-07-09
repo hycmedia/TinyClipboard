@@ -20,7 +20,7 @@ class List extends React.Component {
       List.listItemNotes = this.props.list;
       let i;
       if (List.listItemNotes.length !== 0) {
-          this.listItems.push(<ListItem key={"item_" + List.listItemNotes.length} value={List.listItemNotes - 1} name={List.listItemNotes[List.listItemNotes.length - 1]} text={"test"}/>)
+          this.listItems.push(<ListItem key={"item_" + List.listItemNotes.length} value={List.listItemNotes - 1} name={List.listItemNotes[List.listItemNotes.length - 1]} />)
       }
 
 
