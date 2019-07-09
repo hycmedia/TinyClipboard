@@ -1,40 +1,52 @@
-import React from 'react';
-import {MDCList} from '@material/list';
-import ListItem from "./ListItem";
-import {MDCRipple} from "@material/ripple/component";
-import {MDCDialog} from "@material/dialog/component";
+import React from "react";
 
-class Dialog extends React.Component {
+class Dialog extends React.Component{
 
-    dialog;
+    onSubmitCallback;
+    title;
+    content;
+    name;
 
-    static createDialog(title, text) {
-        return(
-            <div className={"mdc-dialog"} role={"alertdialog"} aria-modal={"true"} aria-labelledby={"my-dialog-title"} aria-describedby={"my-dialog-content"}>
-                <div className={"mdc-dialog__container"}>
-                    <div className={"mdc-dialog__title"}>
-                        <h2 className={"mdc-dialog__title"}>{title}</h2>
-                    </div>
+    constructor(props) {
+        super(props);
+
+        this.title = props.title;
+        this.content = props.content;
+        this.name = props.name;
+        this.onSubmitCallback = props.onSubmit;
+    }
+
+    createDialog() {
+        return (<div className={"mdc-dialog " + this.name} role={"alertdialog"} aria-modal={"true"} aria-labelledby={"my-dialog-title"} aria-describedby={"my-dialog-content"}>
+            <div className={"mdc-dialog__container"}>
+                <div className={"mdc-dialog__surface"}>
+                    <h2 className={"mdc-dialog__title"}>
+                        {this.title}
+                    </h2>
                     <div className={"mdc-dialog__content"}>
+                        {this.content}
                     </div>
                     <footer className={"mdc-dialog__actions"}>
-                        <button type={"button"} className={"mdc-button mdc-dialog__button"} data-mdc-dialog-action={"no"}>
-                            <span className={"mdc-button__label"}>No</span>
+                        <button onClick={() => this.onSubmit()} type={"button"} className={"mdc-button mdc-dialog__button"} data-mdc-dialog-action={"no"}>
+                            <span className={"mdc-button__label"}>Create</span>
                         </button>
                     </footer>
                 </div>
-                <div className={"mdc-dialog__scrim"}></div>
             </div>
-        )
+            <div className={"mdc-dialog__scrim"}></div>
+        </div>)
     }
 
-  render() {
-      return Dialog.createDialog("test", "test");
+    onSubmit() {
+        this.onSubmitCallback();
     }
 
-    componentDidMount() {
-        this.dialog = new MDCDialog(document.querySelector('.mdc-dialog'));
-        this.dialog.open();
+    render() {
+        return this.createDialog();
+    }
+
+
+    static insertNote() {
     }
 
 }
