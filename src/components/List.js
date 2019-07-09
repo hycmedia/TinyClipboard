@@ -16,7 +16,7 @@ class List extends React.Component {
   }
 
   render() {
-      return <ul className="mdc-list">
+      return <ul className="mdc-list" >
           {this.listItems}
       </ul>
     }

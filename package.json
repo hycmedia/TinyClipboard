@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/dialog": "^3.0.0",
     "@material/fab": "^3.0.0",
     "@material/list": "^3.0.0",
     "@material/ripple": "^3.0.0",
