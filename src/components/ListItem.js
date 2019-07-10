@@ -15,7 +15,7 @@ class ListItem extends React.Component {
   }
 
   render() {
-      return <li onClick={this.handleClick} className="mdc-list-item" ref={this.ripple} value={this.props.name}><span className="mdc-list-otem__text">{this.props.name}</span></li>;
+      return <li onClick={this.handleClick} className="mdc-list-item" ref={this.ripple} id={this.props.name}><span className="mdc-list-otem__text">{this.props.name}</span></li>;
     }
 
   componentDidMount() {
@@ -23,7 +23,8 @@ class ListItem extends React.Component {
   }
 
   handleClick(e) {
-      alert(e.target.value)
+      e.target.id.select()
+      document.execCommand("copy")
   }
 }
 
