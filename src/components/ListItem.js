@@ -28,7 +28,6 @@ class ListItem extends React.Component {
 
   handleClick(e) {
       this.dialog = new MDCDialog(document.querySelector('.paste'));
-      this.dialog.open();
       this.currentElement = document.getElementById("input-field_paste");
       this.currentElement.value = this.props.name;
       this.currentElement.select();
