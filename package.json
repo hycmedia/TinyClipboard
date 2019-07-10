@@ -8,10 +8,13 @@
     "@material/fab": "^3.0.0",
     "@material/list": "^3.0.0",
     "@material/ripple": "^3.0.0",
+    "@material/snackbar": "^3.0.0",
     "@material/textfield": "^3.0.0",
+    "clipboardy": "^2.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-x-clipboard": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

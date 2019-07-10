@@ -4,10 +4,11 @@ import FabButton from './components/FabButton';
 import TopBar from './components/TopBar';
 import List from './components/List';
 import TextDialog from "./components/TextDialog";
+import SnackBar from "./components/SnackBar";
 
 class App extends React.Component {
 
-    static dialog;
+    dialog;
     notes = [];
 
     constructor(props) {
@@ -26,10 +27,14 @@ class App extends React.Component {
     )
     }
 
+
+
     render() {
         return (<div>
-                <TextDialog title={"Create new note"} name={"create"} onSubmit={this.handleAddNote.bind(this)} />
+                <TextDialog title={"Paste it!"} name={"paste"} onSubmit={this.handleAddNote.bind(this)} />
+                <TextDialog title={"Paste in here"} name={"create"} onSubmit={this.handleAddNote.bind(this)} />
                 <TopBar/>
+                <SnackBar text={"Copied to your clipboard 😁"} name={"copied"} />
                 <List list={this.notes}/>
                 <FabButton/>
             </div>
