@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TinyClipboard/precache-manifest.bd907bab265a1b3c14016867536b3ac6.js"
+  "/TinyClipboard/precache-manifest.6abfd61069ef6ba8758c229dfc680eb2.js"
 );
 
 self.addEventListener('message', (event) => {
