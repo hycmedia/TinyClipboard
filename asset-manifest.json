@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TinyClipboard/static/css/main.a69ee5dd.chunk.css",
+    "main.js": "/TinyClipboard/static/js/main.30a0e56e.chunk.js",
+    "main.js.map": "/TinyClipboard/static/js/main.30a0e56e.chunk.js.map",
+    "runtime~main.js": "/TinyClipboard/static/js/runtime~main.b325145f.js",
+    "runtime~main.js.map": "/TinyClipboard/static/js/runtime~main.b325145f.js.map",
+    "static/js/2.422eae5a.chunk.js": "/TinyClipboard/static/js/2.422eae5a.chunk.js",
+    "static/js/2.422eae5a.chunk.js.map": "/TinyClipboard/static/js/2.422eae5a.chunk.js.map",
+    "index.html": "/TinyClipboard/index.html",
+    "precache-manifest.bd907bab265a1b3c14016867536b3ac6.js": "/TinyClipboard/precache-manifest.bd907bab265a1b3c14016867536b3ac6.js",
+    "service-worker.js": "/TinyClipboard/service-worker.js",
+    "static/css/main.a69ee5dd.chunk.css.map": "/TinyClipboard/static/css/main.a69ee5dd.chunk.css.map"
+  }
+}
