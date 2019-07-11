@@ -2,7 +2,7 @@
   "name": "notes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tinyclipboard.js.org",
+  "homepage": "https://hycmedia.github.io/TinyClipboard",
   "dependencies": {
     "@material/button": "^3.0.0",
     "@material/dialog": "^3.0.0",
