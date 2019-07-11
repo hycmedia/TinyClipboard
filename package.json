@@ -2,7 +2,7 @@
   "name": "notes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hycmedia.github.io/TinyClipboard",
+  "homepage": "https://tinyclipboard.js.org",
   "dependencies": {
     "@material/button": "^3.0.0",
     "@material/dialog": "^3.0.0",
@@ -12,7 +12,6 @@
     "@material/snackbar": "^3.0.0",
     "@material/textfield": "^3.0.0",
     "clipboardy": "^2.1.0",
-    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -40,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
